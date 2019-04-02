@@ -539,6 +539,20 @@ header.masthead .sub-head {
   border-width: 5px;
 }
 
+@media (min-width: 768px) {
+  .card {
+    min-height: 400px;
+  }
+}
+
+.rate-btn {
+  margin: 20px;
+  background-color: #052532;
+  color: #fc7256;
+  border: solid 2px #fc7256;
+  padding: 10px;
+}
+
 section#contact {
   background-color: #052532;
   background-image: url("../img/map-image.png");
