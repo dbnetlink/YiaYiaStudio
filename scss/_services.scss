@@ -1,58 +1,10 @@
-// Styling for the services section
-.section-heading {
-    margin: 200px 0px;
-    text-transform: none;
-    font-size: 500%;
-    @include heading-font;
-}
-
 #services {
     text-align: center;
     color: #fc7256;
-    background-image: url('../img/space.jpg');
+    background-image: url('../img/services.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
     min-height:800px;
-}
-
-#rooms {
-    background-color: #052532;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-    min-height: 800px;
-}
-
-.white-heading {
-    margin-top:100px;
-    color: white;
-    font-size: 300%;
-    @include heading-font;
-}
-
-.room-title {
-    color: white;
-    font-size: 120%;
-    @include heading-font;
-}
-.room-text {
-    color: #fc7256;
-    font-size: 90%;
-    @include courier-font;
-}
-
-.quote {
-    color: white;
-    font-size: 150%;
-    @include heading-font;
-    font-style:italic;
-}
-
-.quotee {
-    color: white;
-    font-size: 100%;
-    @include heading-font;
 }

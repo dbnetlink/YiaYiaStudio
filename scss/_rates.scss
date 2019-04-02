@@ -1,0 +1,29 @@
+
+#rates {
+    text-align: center;
+    color: #fc7256;
+    background-image: url('../img/rates.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    min-height:800px;
+}
+
+.border-pink {
+    border-color: #fc7256;
+}
+
+.card-title
+{
+    margin-top:20px;
+}
+.card-title, .card-text {
+    color: #fc7256;
+    @include courier-font;
+}
+
+.card {
+    background-color: #052532;
+    border-width:5px;
+}

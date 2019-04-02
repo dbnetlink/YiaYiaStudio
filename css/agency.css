@@ -99,6 +99,10 @@ img::-moz-selection {
   background: transparent;
 }
 
+section {
+  background-color: #052532;
+}
+
 #mainNav {
   background-color: #052532;
 }
@@ -228,6 +232,17 @@ header.masthead .sub-head {
   }
 }
 
+#services {
+  text-align: center;
+  color: #fc7256;
+  background-image: url("../img/services.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  min-height: 800px;
+}
+
 .section-heading {
   margin: 200px 0px;
   text-transform: none;
@@ -235,7 +250,7 @@ header.masthead .sub-head {
   font-family: 'Mirador-BoldDEMO', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#services {
+#space {
   text-align: center;
   color: #fc7256;
   background-image: url("../img/space.jpg");
@@ -296,10 +311,6 @@ header.masthead .sub-head {
   background-position: center center;
   background-size: cover;
   min-height: 800px;
-}
-
-section {
-  background-color: #052532;
 }
 
 .timeline {
@@ -488,25 +499,44 @@ section {
   }
 }
 
-.team-member {
-  margin-bottom: 50px;
+#sounds {
   text-align: center;
+  color: #fc7256;
+  background-image: url("../img/sounds.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  min-height: 800px;
 }
 
-.team-member img {
-  width: 225px;
-  height: 225px;
-  border: 7px solid #fc7256;
+#rates {
+  text-align: center;
+  color: #fc7256;
+  background-image: url("../img/rates.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  min-height: 800px;
 }
 
-.team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
+.border-pink {
+  border-color: #fc7256;
 }
 
-.team-member p {
-  margin-top: 0;
+.card-title {
+  margin-top: 20px;
+}
+
+.card-title, .card-text {
+  color: #fc7256;
+  font-family: Courier New, Courier, monospace;
+}
+
+.card {
+  background-color: #052532;
+  border-width: 5px;
 }
 
 section#contact {
