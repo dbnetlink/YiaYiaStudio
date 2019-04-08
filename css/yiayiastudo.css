@@ -28,4 +28,8 @@
     src: url('webfonts/38FCB4_0_0.eot');
     src: url('webfonts/38FCB4_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/38FCB4_0_0.woff2') format('woff2'),url('webfonts/38FCB4_0_0.woff') format('woff'),url('webfonts/38FCB4_0_0.ttf') format('truetype');
 }
+
+.top-buffer {
+    margin-top: 20px;
+}
  
