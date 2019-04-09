@@ -8,3 +8,22 @@
     background-size: cover;
     min-height: 800px;
 }
+
+.soundcloud-table {
+    border-collapse: collapse;
+    width: auto !important;
+}
+
+
+.soundcloud-table td {
+    border: 1pt solid #fc7256;
+    color: #fc7256;
+    font-size:x-large;
+    @include heading-font;
+    vertical-align:middle;
+    padding:10px;
+}
+
+.soundcloud-table td span {
+    color: #fc7256;
+}

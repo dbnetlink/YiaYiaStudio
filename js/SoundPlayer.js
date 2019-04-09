@@ -1,44 +1,33 @@
-﻿import React from 'react';
-import ReactDOM from 'react-dom';
-import { PlayButton, Timer } from 'react-soundplayer/components';
-import { withSoundCloudAudio } from 'react-soundplayer/addons';
+﻿(function ($) {
+    SC.initialize({
+        client_id: 'L6pWQKWWm6oT4Nv0mTWEkxKypNpleA5m'
+    });
 
-const clientId = 'L6pWQKWWm6oT4Nv0mTWEkxKypNpleA5m';
-const resolveUrl = 'https://soundcloud.com/yiayias-studio/sets/yiayias-recordings';
+    var track_url = 'https://soundcloud.com/yiayias-studio/sets/yiayias-recordings';
 
-const Player = withSoundCloudAudio(props => {
-    let { track, currentTime } = props;
+    var getPlaylist = function(playlist) {
+        console.log(playlist);
+        var source = $("#soundplayer-template").html();
+        var template = Handlebars.compile(source);
+        var html = template(playlist.tracks);
+        console.log(playlist.tracks);
+        $('#SoundcloudTracks').html(html);
+        $('#SoundcloudTracks a').click(playTrack);
+    };
 
-    return (
-        <div className="custom-player">
-            <PlayButton
-                className="custom-player-btn"
-                onPlayClick={() => {
-                    console.log('play button clicked!');
-                }}
-                {...props} />
-            <h2 className="custom-player-title">
-                {track ? track.title : 'Loading...'}
-            </h2>
-            <Timer
-                className="custom-player-timer"
-                duration={track ? track.duration / 1000 : 0}
-                currentTime={currentTime}
-                {...props} />
-        </div>
-    );
-});
+    var playTrack = function (event) {
+        var trackId = $(event.target).closest("a").data("trackid");
+        SC.stream('/tracks/' + trackId).then(function (player) {
+            player.play().then(function () {
+                console.log('Playback started!');
+            }).catch(function (e) {
+                console.error('Playback rejected. Try calling play() from a user interaction.', e);
+            });
+        });
+    };
 
-const App = () => {
-    return (
-        <Player
-            clientId={clientId}
-            resolveUrl={resolveUrl}
-            onReady={() => console.log('track is loaded!')} />
-    );
-};
+    SC.resolve(track_url).then(getPlaylist);
 
-ReactDOM.render(
-    <App />,
-    document.getElementById('#app')
-);
+})(jQuery);
+
+

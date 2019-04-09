@@ -386,6 +386,24 @@ header.masthead .sub-head {
   min-height: 800px;
 }
 
+.soundcloud-table {
+  border-collapse: collapse;
+  width: auto !important;
+}
+
+.soundcloud-table td {
+  border: 1pt solid #fc7256;
+  color: #fc7256;
+  font-size: x-large;
+  font-family: 'Mirador-BoldDEMO', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.soundcloud-table td span {
+  color: #fc7256;
+}
+
 #rates {
   text-align: center;
   color: #fc7256;
