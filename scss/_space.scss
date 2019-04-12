@@ -9,7 +9,7 @@
 #space {
     text-align: center;
     color: #fc7256;
-    background-image: url('../img/space.jpg');
+    background-image: url('../img/The Space.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -35,12 +35,12 @@
 
 .room-title {
     color: white;
-    font-size: 120%;
+    font-size: x-large;
     @include heading-font;
 }
 .room-text {
     color: #fc7256;
-    font-size: 90%;
+    font-size: large;
     @include courier-font;
 }
 

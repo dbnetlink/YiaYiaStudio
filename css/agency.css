@@ -198,7 +198,7 @@ header.masthead .intro-text .intro-heading {
 
 header.masthead .para {
   font-family: Courier New, Courier, monospace;
-  font-size: larger;
+  font-size: x-large;
   text-align: left;
 }
 
@@ -297,7 +297,7 @@ header.masthead .sub-head {
 #services {
   text-align: center;
   color: #fc7256;
-  background-image: url("../img/services.jpg");
+  background-image: url("../img/The Services.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -315,7 +315,7 @@ header.masthead .sub-head {
 #space {
   text-align: center;
   color: #fc7256;
-  background-image: url("../img/space.jpg");
+  background-image: url("../img/The Space.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -341,13 +341,13 @@ header.masthead .sub-head {
 
 .room-title {
   color: white;
-  font-size: 120%;
+  font-size: x-large;
   font-family: 'Mirador-BoldDEMO', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .room-text {
   color: #fc7256;
-  font-size: 90%;
+  font-size: large;
   font-family: Courier New, Courier, monospace;
 }
 
@@ -367,7 +367,7 @@ header.masthead .sub-head {
 #portfolio {
   text-align: center;
   color: #fc7256;
-  background-image: url("../img/gear.jpg");
+  background-image: url("../img/The Gear.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -378,7 +378,7 @@ header.masthead .sub-head {
 #sounds {
   text-align: center;
   color: #fc7256;
-  background-image: url("../img/sounds.jpg");
+  background-image: url("../img/The Sounds.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -407,7 +407,7 @@ header.masthead .sub-head {
 #rates {
   text-align: center;
   color: #fc7256;
-  background-image: url("../img/rates.jpg");
+  background-image: url("../img/The Rates.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
